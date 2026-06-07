@@ -1,30 +1,8 @@
-# Zoo JDBC Project
+# Zoo JDBC Project (Lab 10)
 
-Лабораторная работа №10
+## 🚀 Запуск
 
-## Технологии
-
-- Java 21
-- PostgreSQL
-- JDBC
-- HikariCP
-- Maven
-- Logback
-
-## Запуск
-
+```bash
 docker start zoo-psql-lab
-
 mvn clean compile
-
 mvn exec:java
-
-## Реализовано
-
-- CRUD операции
-- DAO слой
-- Connection Pool (HikariCP)
-- Batch Insert
-- Transactions
-- Rollback
-- Business Queries
