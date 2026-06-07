@@ -28,8 +28,12 @@ public class TransactionService {
             ps.setObject(6, 3);
             ps.executeUpdate();
 
-            // искусственная ошибка
-            if (true) throw new RuntimeException("rollback test");
+            boolean fail = true;
+            ps.executeUpdate();
+
+            if (fail) {
+                throw new RuntimeException("rollback test");
+            }
 
             ps.setString(1, "tx2");
             ps.executeUpdate();
