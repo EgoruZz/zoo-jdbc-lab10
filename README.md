@@ -4,5 +4,6 @@
 
 ```bash
 docker start zoo-psql-lab
-mvn clean compile
+cd путь_к_файлу
+mvn clean compile # используется после внесения изменений в исходный код
 mvn exec:java
